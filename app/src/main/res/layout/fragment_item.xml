@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imagenDatalle"
+                android:layout_width="match_parent"
+                android:layout_height="241dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bici_prede"/>
+
+            <TextView
+                android:id="@+id/duenoDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Owner Name" />
+
+            <TextView
+                android:id="@+id/descDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:text="Description of the bike" />
+
+            <TextView
+                android:id="@+id/ciudadDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:text="City of the bike" />
+
+            <TextView
+                android:id="@+id/locaDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:text="Location details" />
+
+            <Button
+                android:id="@+id/btnVolverLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="Volver"
+                android:textStyle="bold"
+                android:textSize="19sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+
